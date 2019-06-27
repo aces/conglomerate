@@ -1,6 +1,13 @@
+        New in Release 1.6.9
+        --------------------
+* surface_mask2: added -noboundary option and changed type of n_voxels
+  to size_t for large volumes
+* smooth_mask: replace ctime.pl by POSIX::ctime to upgrade 
+  for Unbuntu-16.0
+
         New in Release 1.6.8
         --------------------
-* modifications to print_world_values.c
+* modifications to print_world_values.c (use double instead of float)
 
         New in Release 1.6.7
         --------------------

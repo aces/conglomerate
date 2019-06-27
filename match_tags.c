@@ -9,6 +9,9 @@
 @CALLS      : 
 @CREATED    : November 8, 2001 (Peter Neelin)
 @MODIFIED   : $Log: match_tags.c,v $
+@MODIFIED   : Revision 1.2  2018/11/29 18:04:39  clepage
+@MODIFIED   : update ChangeLog/NEWS
+@MODIFIED   :
 @MODIFIED   : Revision 1.1  2004/04/07 15:53:20  bert
 @MODIFIED   : Initial checkin, from Peter's directory
 @MODIFIED   :
@@ -16,10 +19,6 @@
  * Initial revision
  *
 ---------------------------------------------------------------------------- */
-
-#ifndef lint
-static char rcsid[]="$Header: /home/claude/CVS/libraries/conglomerate/match_tags.c,v 1.1 2004/04/07 15:53:20 bert Exp $";
-#endif
 
 #include <stdlib.h>
 #include <stdio.h>

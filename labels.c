@@ -15,10 +15,6 @@
 #include  <volume_io/internal_volume_io.h>
 #include  <vols.h>
 
-#ifndef lint
-static char rcsid[] = "$Header: /private-cvsroot/libraries/conglomerate/labels.c,v 1.2 2001-10-22 16:56:19 stever Exp $";
-#endif
-
 /* ----------------------------- MNI Header -----------------------------------
 @NAME       : set_label_volume_real_range
 @INPUT      : volume
@@ -129,7 +125,7 @@ public  void  set_all_volume_label_data(
     void            *ptr;
     Real            real_value;
     int             v0, v1, v2, v3, v4;
-    unsigned int    n_voxels;
+    size_t          n_voxels;
 
     check_alloc_label_data( volume );
 

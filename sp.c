@@ -15,10 +15,6 @@
 #include  <volume_io/internal_volume_io.h>
 #include  <geom.h>
 
-#ifndef lint
-static char rcsid[] = "$Header: /private-cvsroot/libraries/conglomerate/sp.c,v 1.2 2001-10-22 16:56:25 stever Exp $";
-#endif
-
 private  void  subdivide_polygon(
     polygons_struct   *polygons,
     int               poly,

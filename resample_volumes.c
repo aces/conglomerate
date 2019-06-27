@@ -5,7 +5,10 @@
 @GLOBALS    : 
 @CREATED    : February 8, 1993 (Peter Neelin)
 @MODIFIED   : $Log: resample_volumes.c,v $
-@MODIFIED   : Revision 1.1  2001-05-11 08:11:22  stever
+@MODIFIED   : Revision 1.2  2018/11/29 18:04:39  clepage
+@MODIFIED   : update ChangeLog/NEWS
+@MODIFIED   :
+@MODIFIED   : Revision 1.1  2001/05/11 08:11:22  stever
 @MODIFIED   : Add files that did not have associated RCS file.
 @MODIFIED   :
  * Revision 3.0  1995/05/15  19:30:57  neelin
@@ -65,10 +68,6 @@
               software for any purpose.  It is provided "as is" without
               express or implied warranty.
 ---------------------------------------------------------------------------- */
-
-#ifndef lint
-static char rcsid[]="$Header: /private-cvsroot/libraries/conglomerate/resample_volumes.c,v 1.1 2001-05-11 08:11:22 stever Exp $";
-#endif
 
 #include <stdlib.h>
 #include <stdio.h>

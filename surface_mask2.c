@@ -21,6 +21,7 @@
 
 /* argument parsing options */
 int    output_binary_mask = 0;
+int    include_boundary = 1;
 
 /* argument parsing table */
 ArgvInfo argTable[] = {
@@ -28,6 +29,8 @@ ArgvInfo argTable[] = {
     "\nOutput options:" },
   { "-binary_mask", ARGV_CONSTANT, (char *) 1, (char *) &output_binary_mask,
     "Create a binary output." },
+  { "-noboundary", ARGV_CONSTANT, (char *) 0, (char *) &include_boundary,
+    "Exclude the border of the surface in the mask." },
 
   { NULL, ARGV_END, NULL, NULL, NULL }
 };
@@ -235,7 +238,9 @@ int binary_object_mask( STRING input_surface_filename,
     terminate_progress_report( &progress );
 
     /* force intersection to be part of mask */
-    scan_object_to_volume(objects[0], volume, volume, inside_value, 1);
+    if( include_boundary ) {
+      scan_object_to_volume(objects[0], volume, volume, inside_value, 1);
+    }
     
     delete_object_list( n_objects, objects );
     return( 0 );

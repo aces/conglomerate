@@ -14,10 +14,6 @@
 
 #include <volume_io/internal_volume_io.h>
 
-#ifndef lint
-static char rcsid[] = "$Header: /private-cvsroot/libraries/conglomerate/thin_plate_spline.c,v 1.2 2001-10-22 16:56:27 stever Exp $";
-#endif
-
 #define   INVERSE_FUNCTION_TOLERANCE     0.01
 #define   INVERSE_DELTA_TOLERANCE        0.01
 #define   MAX_INVERSE_ITERATIONS         20

@@ -11,6 +11,9 @@
               peaks, but the plateau itself is not.
 @CREATED    : February 1, 1999 (Peter Neelin)
 @MODIFIED   : $Log: find_peaks.c,v $
+@MODIFIED   : Revision 1.2  2018/11/29 18:04:39  clepage
+@MODIFIED   : update ChangeLog/NEWS
+@MODIFIED   :
 @MODIFIED   : Revision 1.1  2004/04/22 13:15:01  bert
 @MODIFIED   : Initial addition to conglomerate
 @MODIFIED   :
@@ -53,10 +56,6 @@
  * Initial revision
  *
 ---------------------------------------------------------------------------- */
-
-#ifndef lint
-static char rcsid[]="$Header: /home/claude/CVS/libraries/conglomerate/find_peaks.c,v 1.1 2004/04/22 13:15:01 bert Exp $";
-#endif
 
 #include <stdlib.h>
 #include <stdio.h>

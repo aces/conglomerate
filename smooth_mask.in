@@ -14,16 +14,16 @@
 #             express or implied warranty.
 #---------------------------------------------------------------------------- 
 #$RCSfile: smooth_mask.in,v $
-#$Revision: 1.1 $
+#$Revision: 1.2 $
 #$Author: claude $
-#$Date: 2006/05/04 19:40:03 $
+#$Date: 2017/07/06 21:26:23 $
 #$State: Exp $
 #---------------------------------------------------------------------------
 
 use warnings "all";
 use FindBin;
 
-require "ctime.pl";
+use POSIX;
 
 use Getopt::Tabular;
 use MNI::Startup qw(nocputimes);
@@ -181,7 +181,7 @@ sub Initialize
    $Version = "@VERSION@";
    $LongVersion = "version ${Version}: slightly tested perl code. Beware!";
 
-    chop ($ctime = &ctime(time));
+    chop ($ctime = &POSIX::ctime(time));
     $HistoryLine = "$ctime>>> $0 @ARGV\n";
 
     $Clobber     = 0;
